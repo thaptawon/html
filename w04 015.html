@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formatting workshop</title>
+    <style> 
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: forestgreen;
+
+        }
+        .container{
+      /*  background-color: beige; */
+            width: 80%;
+            margin: 0 auto;
+        }
+        .card{
+        background-color: rgb(241, 241, 241); 
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            border-top: 4px solid rgb(92, 212, 252);
+        }
+        .card.module-1 {
+            border-top-color: rgb(149, 29, 209);
+        }
+        .card.module-2 {
+            border-top-color: rgb(190, 75, 4);
+        }
+        h1{color:darkblue;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+        a{
+            background-color: black;
+            text-decoration: none;
+            color: aqua;
+            padding:  2px 8px;
+            border-radius: 5px;
+        }
+        a:hover{
+            text-decoration: none;
+            color: brown;
+        }
+        foooter {
+            color: black;
+            margin-bottom: 20px;
+        }
+        .texr-color{
+            color: blueviolet;
+
+        }
+        .note {
+            border-left: 4px solid gold;
+            color: aqua;
+            font-size: 14px;
+        }
+        .note::before {
+           content: " 🎈 ";
+        </style>
+</head>
+<body>
+   
+    <div class="container">
+
+        <h1>Workshop: HTML Text Formatting</h1>
+        <p >ฝึกใช้แท็กรูปแบบข้อความ (Formatting Tags) เพื่อสร้างเนื้อหาที่อ่านง่ายและเป็นระเบียบ</p>
+
+        <!-- Card 1: Explanation -->
+        <section class="card">
+            <h2>1. สิ่งที่ต้องรู้ก่อนเริ่มทำ Workshop</h2>
+
+            <p>HTML มีแท็กสำหรับจัดรูปแบบข้อความ ทำให้เนื้อหาดูเด่น อ่านง่าย และสื่อความหมายได้ดีขึ้น</p>
+
+            <ul>
+                <li>&lt;b&gt; – <b class="texr-color">ตัวหนา (เน้นเฉย ๆ)</b></li>
+                <li>&lt;strong&gt; – <strong class="texr-color">ตัวหนาแบบ “สำคัญ” เชิงความหมาย (semantic importance)</strong></li>
+                <li>&lt;i&gt; – <i class="texr-color">ตัวเอียง (ใช้กับศัพท์เฉพาะหรือตัวเน้น)</i></li>
+                <li>&lt;em&gt; – <em class="texr-color">ตัวเอียงแบบเน้นน้ำเสียง</em></li>
+                <li>&lt;u&gt; – <u class="texr-color">ขีดเส้นใต้</u></li>
+                <li>&lt;ins&gt; –<ins class="texr-color"> ขีดเส้นใต้</ins></li>
+                <li>&lt;mark&gt; – <mark class="texr-color">ไฮไลต์ข้อความ</mark></li>
+                <li>&lt;code&gt; – <code class="texr-color">แสดงข้อความเป็นรูปแบบโค้ด</code></li>
+                <li>&lt;small&gt; – <small class="texr-color">ข้อความขนาดเล็ก</small></li>
+                <li>&lt;del&gt; – <del class="texr-color">ข้อความขีดฆ่า</del></li>
+                <li>&lt;s&gt; – <s class="texr-color">ข้อความขีดฆ่า</s></li>
+                <li>&lt;sub&gt; – <sub class="texr-color">ตัวห้อย เช่น H2O</sub></li>
+                <li>&lt;sup&gt; – <sup class="texr-color">ตัวยก เช่น x2</sup></li>              
+            </ul>
+            <div class="box">
+                <p>แท็กที่ไม่รองรับใน HTML5</p>
+                <ul>
+                    <li>&lt;strike&gt; – not support in HTML5</li>
+                    <li>&lt;big&gt; – not support in HTML5</li>
+                    <li>&lt;tt&gt; – not support in HTML5</li>
+                </ul>
+            </div>
+
+            <div class="note">
+                นักศึกษาต้องใช้แท็ก formatting อย่างน้อย 5 ชนิดในงานนี้
+            </div>
+        </section>
+       
+        <!-- Card 2: Task -->
+        <section class="card module-1">
+            <h2>2. ภารกิจของสำหรับนักศึกษาต้องทำ</h2>
+            <p>ให้ค้นหาเนื้อหาเกี่ยวกับ <b>“เทคโนโลยีคอมพิวเตอร์สมัยใหม่”</b> โดยต้องมี:</p>
+
+            <ul>
+                <li>หัวข้อ &lt;h1&gt; 1 อัน</li>
+                <li>ย่อหน้า &lt;p&gt; อย่างน้อย 3 ย่อหน้า</li>
+                <li>ใช้แท็ก formatting อย่างน้อย <b>5 ประเภท</b></li>
+                <li>ข้อความไหนมีการจัด formatting ให้ <b>ใส่สีข้อความเป็นสีแดงชมพู</b></li>
+            </ul>
+        </section>
+
+        <!-- Card 3: Example from students -->
+        <section class="card module-2">
+            <h2>บล็อกนี้สำหรับนักศึกษาหาเนื้อหามาใส่เอง</h2>
+            <p>เอาเนื้อหามาใส่ในนี้</p>
+
+        </section>
+
+        <footer><a href="index.html">← Back to HTML Tutorial</a></footer>
+
+    </div>
+</body>
+</html>
+
