@@ -1,0 +1,105 @@
+/* global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-padding-top: 200px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: grey;
+}
+/* componet styles */
+.badge {
+}
+.header {
+  background-color: forestgreen;
+  box-shadow: 5px 5px 15px green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+code {
+}
+.card {
+}
+.btn-text-link {
+  list-style: none;
+  display: flex;
+  gap: 21px;
+  margin-top: 10px;
+}
+.btn-text-link li {
+  background-color: black;
+  padding: 13px 20px;
+  border-radius: 50px;
+}
+.btn-text-link li:hover {
+  background-color: rgb(255, 14, 14);
+  padding: 13px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.card.bordercolor1 {
+  border-top: 4px solid dodgerblue;
+}
+.card.bordercolor2 {
+  border-top: 4px solid rgb(255, 30, 30);
+}
+.card.bordercolor3 {
+  border-top: 4px solid rgb(240, 30, 255);
+}
+.card.bordercolor4 {
+  border-top: 4px solid rgb(255, 195, 30);
+}
+.card.bordercolor5 {
+  border-top: 4px solid rgb(30, 255, 105);
+}
+.card.bordercolor6 {
+  border-top: 4px solid rgb(255, 30, 34);
+}
+pre {
+  background-color: rgb(128, 126, 126);
+  border-left: 4px solid rgb(0, 0, 0);
+  white-space: pre-wrap;
+}
+.img {
+  width: 40px;
+}
+.note {
+  border-left: 4px solid gold;
+  color: aqua;
+  font-size: 14px;
+}
+.note::before {
+  content: " 🎈 ";
+}
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 200px auto 20px;
+  background-color: rgb(255, 255, 255);
+}
+/* Group1 style */
+.position {
+  display: flex;
+  border: 2px green;
+}
+.position.left {
+  justify-self: flex-start;
+}
+.position.center {
+  justify-self: center;
+}
+.position.right {
+  justify-self: flex-end;
+}
